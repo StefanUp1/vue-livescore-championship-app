@@ -7,7 +7,10 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "vue-moment": "^4.0.0",
+    "vue-router": "^3.0.1",
+    "vuejs-datepicker": "^1.5.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.1",
