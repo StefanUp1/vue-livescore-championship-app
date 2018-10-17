@@ -2,8 +2,8 @@
   <div>
     <h1 v-if="goalscorers.length == 0">No Goals</h1>
 
-    <ul v-else class="list-group" v-for="goalscorer in goalscorers">
-      <li class="row">
+    <ul v-else class="list-group">
+      <li class="row" v-for="goalscorer in goalscorers">
         <div class="col-sm-4">
           <span class="homeScorer">{{ goalscorer.home_scorer }}</span>
           <span v-if="goalscorer.home_scorer != '' " class="goalTime">{{ goalscorer.time }}</span>

@@ -1,8 +1,8 @@
 <!--stats(goals, cards, subs)-->
 <template>
   <div>
-    <ul v-if="statistics" class="list-group" v-for="stats in statistics">
-      <li class="list-group-item">
+    <ul v-if="statistics" class="list-group">
+      <li class="list-group-item" v-for="stats in statistics">
         <span class="homeStats">{{ stats.home }}</span>
         <span class="typeStats"><strong>{{ stats.type }}</strong></span>
         <span class="awayStats">{{ stats.away }} </span>

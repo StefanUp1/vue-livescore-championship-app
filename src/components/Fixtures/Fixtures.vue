@@ -11,9 +11,9 @@
     </div>
 
     <h1 v-if="noFixtures">No matches found. Please try diffrent date.</h1>
-    <ul v-else class="list-group" v-for="fixture in fixtures">
+    <ul v-else class="list-group">
       <li v-if="fixture.match_status
- === 'FT' " class="list-group-item">
+ === 'FT' " class="list-group-item" v-for="fixture in fixtures">
         <span id="fixtureDate" class="timeDate">{{ fixture.match_date }}</span>
         <span class="badge badge-secondary info" data-toggle="tooltip" data-placement="top" title="Full Time">
           FT

@@ -7,8 +7,8 @@
     </h1>
 
     <div v-else>
-      <ul class="list-group" v-for="fixture in fixtures">
-        <li v-if="fixture.match_live == 1" class="list-group-item">
+      <ul class="list-group">
+        <li v-if="fixture.match_live == 1" class="list-group-item" v-for="fixture in fixtures">
           <router-link :to="{name: 'singleFixture', params: {fixture: fixture}}">
             <span class="badge badge-secondary info">
               LIVE
