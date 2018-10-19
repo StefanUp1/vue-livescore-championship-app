@@ -2,13 +2,11 @@
   <div>
     <h1>{{ todayDate }}</h1>
 
-<!--
     <h1 v-if="noFixtures">
       No games today.
     </h1>
--->
 
-    <ul class="list-group">
+    <ul class="list-group" v-else>
       <li v-if="fixture.match_live == 1" class="list-group-item" v-for="fixture in fixtures">
         <router-link :to="{name: 'singleFixture', params: {fixture: fixture}}">
           <span class="badge badge-secondary info">
